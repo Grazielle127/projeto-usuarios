@@ -1,0 +1,21 @@
+<div class="box-user">
+    <div class="box-table">
+        <p class="subtitle">total users: {{usuarios.length}}</p>
+
+        <table>
+            <tr class="table-head">
+                <td class="col-id">Id</td>
+                <td class="col-name">Nome</td>
+                <td class="col-username">Usuario</td>
+                <td class="col-email">E-mail</td>
+            </tr>
+            <tr *ngFor="let usuario of usuarios">
+                <td class="col-id">{{usuario.id}}</td>
+                <td class="col-name">{{usuario.name}}</td>
+                <td class="col-username">{{usuario.username}}</td>
+                <td class="col-email">{{usuario.email}}</td>
+            </tr>
+
+        </table>
+    </div>
+</div>
